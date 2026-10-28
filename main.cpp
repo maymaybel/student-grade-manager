@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -23,6 +24,7 @@ int main() {
     average = (grade1 + grade2 + grade3) / 3;
 
     cout << "\nStudent: " << name << endl;
+    cout << fixed << setprecision(2);
     cout << "Average: " << average << endl;
 
     if (average >= 10) {
